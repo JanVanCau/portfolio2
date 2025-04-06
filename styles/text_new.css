@@ -4,9 +4,11 @@
   box-sizing: border-box; /* Ensure padding and border don't affect width calculations */
 
 /* Optional: Set body margin to 0 if needed */
-body {
+body, html{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden
 }
 
 p{
@@ -23,14 +25,9 @@ p{
     box-sizing: border-box;
     border-bottom: 1px dashed rgba(78, 78, 187, 0.5);
     color: rgb(78, 78, 187);
-    background-color: white;
+    /*background-color: white;*/
+    background-color: rgba(255, 0, 0, 0.1);
     z-index: 100;}
-
-    @media (max-width: 450px) {
-        .header{
-            display: block;
-            text-align: center;
-            position: relative;} }
 
 .name{
     display: flex;
@@ -38,23 +35,34 @@ p{
     justify-content: center;
     border-right: 1px solid rgb(78, 78, 187);}
 
-    @media (max-width: 450px) {
-        .name{
-            display: block;
-            text-align: center;
-            border-right:none;} }
-
 .title{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 33px;}
+    margin-left: 33px;} 
 
-    @media (max-width: 450px) {
-        .title{
+    @media (max-width: 450px){
+        .header{
+            width: 100vw;
+            left:0;
+            padding:0;
+            margin-top: 12px;
+            margin-left: 0;
+            margin-right: 0;
             display: block;
             text-align: center;
-            margin-left: 0;} }
+            position: relative;} 
+        
+        .name, .title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right:none;
+            margin-left: 0;
+            width: 100vw;}
+
+        .title{
+            margin-top: 12px;} }
 
 .title_header{
     font-size: 26px;
@@ -72,7 +80,7 @@ p{
 
     @media (max-width: 450px) {
         .profilepic{
-            margin-top: 1px;} }
+            margin-top: 23px;} }
 
 .main{
     display: grid;
