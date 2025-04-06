@@ -1,8 +1,8 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* Ensure padding and border don't affect width calculations */
-}
+} */
 
 /* Optional: Set body margin to 0 if needed */
 body {
@@ -13,11 +13,6 @@ body {
 p{
     font-family: "Josefin Sans", sans-serif;
     text-align: justify;}
-
-    @media (max-width: 800px) {
-        .sudoku_site{
-            display: grid;
-            grid-template-columns: 400px;} }
 
 .header{
     display: grid;
