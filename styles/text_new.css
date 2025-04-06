@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* Ensure padding and border don't affect width calculations */
-} */
 
 /* Optional: Set body margin to 0 if needed */
 body {
@@ -48,7 +47,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 40px;}
+    margin-left: 33px;}
 
     @media (max-width: 450px) {
         .title{
@@ -108,8 +107,9 @@ p{
             width:100%;
             position: relative;
             border-right: none;
-            padding-left: 15px;
-            padding-right: 15px;} }
+            padding-left: 0;
+            padding-right: 0;
+            margin-top: 40px;} }
 
 .sidebar::-webkit-scrollbar {
     display: none; /* For Chrome, Safari, and Edge */}
@@ -124,7 +124,7 @@ p{
           width:100%;
           margin-left: 0;} }
 
-.title{
+.project_title{
     font-size: 26px;
     font-weight: bold;
     line-height: 24px;
