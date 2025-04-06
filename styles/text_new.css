@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure padding and border don't affect width calculations */
+}
+
+/* Optional: Set body margin to 0 if needed */
+body {
+  margin: 0;
+  padding: 0;
+}
+
 p{
     font-family: "Josefin Sans", sans-serif;
     text-align: justify;}
