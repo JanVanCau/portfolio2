@@ -68,6 +68,17 @@ p{
     margin:0;
     padding:0;}
 
+.profilepic{
+  max-width:100%; 
+  max-height:100%; 
+  object-fit: contain; 
+  border-radius: 150px; 
+  margin-top: 23px;]
+
+  @media (max-width: 450px) {
+      .profilepic{
+          border-radius: 400px;} }
+
 .main{
     display: grid;
     grid-template-columns: 350px 950px;
