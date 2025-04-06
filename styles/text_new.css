@@ -1,15 +1,13 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* Ensure padding and border don't affect width calculations */
-
-/* Optional: Set body margin to 0 if needed */
 body, html{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden
+  /*overflow-x: hidden*/
 }
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
 
 p{
     font-family: "Josefin Sans", sans-serif;
@@ -80,6 +78,8 @@ p{
 
     @media (max-width: 450px) {
         .profilepic{
+            max-width: 70%;
+            max-height: 70%;
             margin-top: 23px;} }
 
 .main{
@@ -123,7 +123,9 @@ p{
             position: relative;
             border-right: none;
             padding-left: 0;
-            padding-right: 0;} }
+            padding-right: 0;
+            margin-bottom: 20px;
+            border-bottom: 1px dashed rgb(78, 78, 187);} }
 
 .sidebar::-webkit-scrollbar {
     display: none; /* For Chrome, Safari, and Edge */}
@@ -133,10 +135,14 @@ p{
     margin-left:390px; 
     margin-top: 80px;}
 
-  @media (max-width: 450px) {
-      .projects{
-          width:100%;
-          margin-left: 0;} }
+    @media (max-width: 450px) {
+        .projects{
+            width:100%;
+            margin-left: 0;
+            margin-top: 20px;}
+        
+        .projects div{
+            width:100%;} }
 
 .project_title{
     font-size: 26px;
@@ -161,17 +167,32 @@ p{
     display: flex;
     margin-top: 40px;
     margin-bottom: 50px;
-    width: 900px;}
-
-@media (max-width: 450px) {
-    .imagerow{
-        width:100%;} }
+    width: 900px;
+    box-sizing: border-box;}
 
 .imagecol{
     display: flex;
     flex-direction: column;
     margin-top: 30px;
     margin-bottom: 30px;}
+
+/*@media (max-width: 450px) {
+    .imagerow{
+        width:100%;} }*/
+
+    @media (max-width: 450px) {
+        .imagerow {
+            flex-direction: column;
+            width: 100%;
+            padding: 0 10px; /* optional side padding */}
+    
+        .imagerow img, .imagecol img {
+            width: 100% !important;
+            height: auto;}
+    
+        .imagecol {
+            margin-top: 0;
+            margin-bottom: 0;} }
 
 a{
     color: rgb(78, 78, 187)
