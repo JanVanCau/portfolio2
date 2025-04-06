@@ -50,6 +50,7 @@ p{
 
     @media (max-width: 450px) {
         .header div:first-child{
+            width:100%;
             border-right:none;} }
 
 .header div:last-child {
@@ -57,6 +58,8 @@ p{
 
     @media (max-width: 450px) {
         .header div:last-child{
+            width:100%;
+            justify-content: center;
             margin-left: 0;} }
 
 .title_header{
