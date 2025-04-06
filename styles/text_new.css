@@ -28,9 +28,9 @@ p{
 
     @media (max-width: 450px) {
         .header{
-            grid-template-columns: 1fr;
-            position: relative;
-            width:100%;} }
+            display: block;
+            text-align: center;
+            position: relative;} }
 
 .name{
     display: flex;
@@ -40,7 +40,8 @@ p{
 
     @media (max-width: 450px) {
         .name{
-            width:100%;
+            display: block;
+            text-align: center;
             border-right:none;} }
 
 .title{
@@ -51,8 +52,8 @@ p{
 
     @media (max-width: 450px) {
         .title{
-            width:100%;
-            justify-content: center;
+            display: block;
+            text-align: center;
             margin-left: 0;} }
 
 .title_header{
@@ -63,11 +64,15 @@ p{
     padding:0;}
 
 .profilepic{
-  max-width:100%; 
-  max-height:100%; 
-  object-fit: contain; 
-  border-radius: 50%; 
-  margin-top: 23px;}
+    max-width:100%; 
+    max-height:100%; 
+    object-fit: contain; 
+    border-radius: 50%;
+    margin-top: 23px;}
+
+    @media (max-width: 450px) {
+        .profilepic{
+            margin-top: 1px;} }
 
 .main{
     display: grid;
@@ -91,9 +96,9 @@ p{
     flex-direction: column; 
     justify-content: flex-start; 
     align-items: center; 
-    border-right:1px solid rgb(78, 78, 187);
     box-sizing: border-box;
-    max-height: 100vh; 
+    border-right:1px solid rgb(78, 78, 187);
+    /*max-height: 100vh;*/ 
     overflow-y: auto;
     background-color: white;
     z-index: 100;
@@ -105,11 +110,12 @@ p{
     @media (max-width: 450px) {
         .sidebar{
             width:100%;
+            top: 0;
+            left: 0;
             position: relative;
             border-right: none;
             padding-left: 0;
-            padding-right: 0;
-            margin-top: 40px;} }
+            padding-right: 0;} }
 
 .sidebar::-webkit-scrollbar {
     display: none; /* For Chrome, Safari, and Edge */}
@@ -117,7 +123,7 @@ p{
 .projects{
     width:900px; 
     margin-left:390px; 
-    margin-top: 80px}
+    margin-top: 80px;}
 
   @media (max-width: 450px) {
       .projects{
