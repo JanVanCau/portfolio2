@@ -1,0 +1,134 @@
+p{
+    font-family: "Josefin Sans", sans-serif;
+    text-align: justify;}
+
+@media (max-width: 800px) {
+    .sudoku_site{
+        display: grid;
+        grid-template-columns: 400px;} }
+
+
+.header{
+    display: grid;
+    grid-template-columns: 350px 950px;
+    position:fixed;
+    top:0;
+    left:8px;
+    height:80px;
+    width:100%;
+    box-sizing: border-box;
+    border-bottom: 1px dashed rgba(78, 78, 187, 0.5);
+    color: rgb(78, 78, 187);
+    background-color: white;
+    z-index: 100;}
+
+@media (max-width: 450px) {
+    .header{
+        grid-template-columns: 1fr;
+        position: relative} }
+
+.header div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;}
+
+.header div:first-child {
+    border-right: 1px solid rgb(78, 78, 187);
+    justify-content: center;}
+
+.title_header{
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 24px;
+    margin:0;
+    padding:0;}
+
+.main{
+    display: grid;
+    grid-template-columns: 350px 950px;
+    padding-bottom: 500px;
+    box-sizing: border-box;}
+
+@media (max-width: 450px) {
+    .main{
+        grid-template-columns: 1fr;} }
+
+.sidebar {
+    width: 350px; 
+    position:fixed;
+    left:8px;
+    top:80px;
+    display:flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    border-right:1px solid rgb(78, 78, 187);
+    box-sizing: border-box;
+    max-height: 100vh; 
+    overflow-y: auto;
+    background-color: white;
+    z-index: 100;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For IE & Edge */}
+
+@media (max-width: 450px) {
+    .sidebar{
+        width:100%;
+        position: relative;} }
+
+.sidebar::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */}
+
+.projects{
+    width:900px; 
+    margin-left:390px; 
+    margin-top: 80px}
+
+@media (max-width: 450px) {
+    .projects{
+        width:100%;
+        margin-left: 0;} }
+
+.title{
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-top: 25px;
+    margin-bottom: 8px;}
+
+.link{
+    font-size: 14px;
+    color: rgb(96,96,96);
+    margin-right: 40px;
+    margin-bottom: 20px;}    
+
+.description{
+    font-size: 14px;
+    color: rgb(96,96,96);
+    line-height: 18px;
+    margin-bottom: 20px;}
+
+.imagerow{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    width: 900px;}
+
+@media (max-width: 450px) {
+    .imagerow{
+        width:100%;} }
+
+.imagecol{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;}
+
+a{
+    color: rgb(78, 78, 187)
+}
+
+a:hover{
+    color: rgb(23, 185, 147);
+    font-weight: bold;
+    transition: 0.1s;}
